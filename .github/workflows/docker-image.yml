@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . -f DockerFile.dev -t rohithmudiraj/docker-react && docker run rohithmudiraj/docker-react npm run test -- -- coverage
+      run: docker build . -f DockerFile.dev -t rohithmudiraj/docker-react && docker run rohithmudiraj/docker-react npm run test -- --coverage
